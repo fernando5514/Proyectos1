@@ -14,7 +14,8 @@
 	<link href="../assets/css/vendor.min.css" rel="stylesheet" />
 	<link href="../assets/css/default/app.min.css" rel="stylesheet" />
 	<link href="../custom/css/styles.css" rel="stylesheet">
-	<link href="css/styles.css" rel="stylesheet" />
+
+
 
 
 	<!-- ================== END core-css ================== -->
@@ -112,7 +113,7 @@
 						</a>
 					</div>
 					<div class="menu-item active">
-						<a href="index.html" class="menu-link">
+						<a href="catalogo" class="menu-link">
 							<div class="menu-icon">
 								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-images" viewBox="0 0 16 16">
 								  <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
@@ -124,7 +125,7 @@
 					</div>
 
 					<div class="menu-item active">
-						<a href="index.html" class="menu-link">
+						<a href="gestor_consumo.html" class="menu-link">
 							<div class="menu-icon">
 								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calculator" viewBox="0 0 16 16">
   							<path d="M12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"/>
@@ -136,7 +137,7 @@
 					</div>
 
 					<div class="menu-item active">
-						<a href="index.html" class="menu-link">
+						<a href="contacto.html" class="menu-link">
 							<div class="menu-icon">
 								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
   							<path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
@@ -212,7 +213,6 @@
 								style="top: -1px">NEW</span></div>
 						<div class="lh-14 fs-13px">
 							<small class="text-dark opacity-50">
-								Adjust the appearance to reduce glare and give your eyes a break.
 							</small>
 						</div>
 					</div>
@@ -229,12 +229,79 @@
 		<!-- end theme-panel -->
 
 		</div>
+		<div class="container-fluid control-form2">
+			<div class="row aling-items-center justify-content-center form1">
+				<div class="col-sm-8 col-md-6 col-lg-4 rounded p-4 shadow">
+					<div class="row justify-content-center mb-4">
+						<img src="../custom/img/coffeecars2.png" class="logo2">
+					</div>
+					<form action="https://postman-echo.com/get"class="needs-validation" method="get" novalidate>
+							<div class="form-register">
+							<div class="boxform">
+								<input class="control-form form-control" type="text" name="nombres" id="nombres" placeholder="Escribe tu nombre" requir ed >
+								<div class="invalid-feedback">Rellena todos los campos</div>
+							</div>
+							<div class="boxform">
+								<input class="control-form form-control" type="text" name="apellidos" id="apellidos" placeholder="Escribe tu apellido" required>
+								<div class="invalid-feedback">Rellena todos los campos</div>
+							</div>
+							<div class="boxform">
+								<input class="control-form form-control" type="email" name="correo" id="correo" placeholder="Escribe tu email" required>
+								<div class="invalid-feedback">Rellena todos los campos</div>
+							</div>
+							<div class="boxform">
+								<input class="control-form form-control" type="tel" name="telefono" id="contraseña" placeholder="Escribe tu número de contacto" required>
+								<div class="invalid-feedback">Rellena todos los campos</div>
+							</div>
+							<div class="boxform">
+								<input class="control-form form-control" type="text" name="direccion" id="direccion" placeholder="Escribe una direccion si es el caso, del cargador que quieres añadir" required>
+								<div class="invalid-feedback">Rellena todos los campos</div>
+							</div>
+							<div class="boxform">
+									<input class="control-form form-control" type="text" name="direccion" id="direccion" placeholder="Escribe un código postal si es el caso, del cargador que quieres añadir" required>
+								<div class="valid-feedback"></div>
+								<div class="invalid-feedback">Rellena todos los campos</div>
+							</div>
+							<div class="boxform control-form">
+								<select class="form-select" name="pais" id="pais" required>
+									<option selected disabled value="">Selecciona...</option>
+									<option>Información sobre coches eléctricos</option>
+									<option>Problema con nuestra aplicacion</option>
+									<option>Añadir cargadores eléctricos</option>
+
+								</select>
+								<div class="invalid-feedback">Invalido completa los datos</div>
+
+							</div >
+							<div align="center" class="boxform control-form">
+								<input  class="botons" type="submit" value="Register">
+							</div>
+
+							</div>
+					<div id="error"></div>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="row align="center"">
+			<div align="center"class="col-lg-12 col-md-6 col-sm-12">
+	</body>
+	<script type="text/javascript" src="js/script1.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 		<!-- end page container -->
 
 		<!-- ================== BEGIN BASE JS ================== -->
 	<!-- ================== BEGIN core-js ================== -->
+	<script src="../custom/js/script.js"></script>
 	<script src="../assets/js/vendor.min.js"></script>
 	<script src="../assets/js/app.min.js"></script>
+
 	<!-- ================== END core-js ================== -->
 
 </body>
