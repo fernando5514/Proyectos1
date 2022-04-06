@@ -195,11 +195,125 @@
 		</div>
 		<!-- END #sidebar -->
 
-		</div>
+		<!-- BEGIN #content -->
+  <div class="container animate__animated animate__fadeInUpBig" id="espacio">
+  	<form class="row g-4 justify-content-center needs-validation" id="form1" action="https://postman-echo.com/get"
+  		method="get" novalidate>
+  		<div class="col-sm-8 col-md-6 col-lg-4 bg-light rounded shadow formulario">
+  			<div class="col-12">
+  				<img width="100px" src="IMG/formulario.png" alt="logo">
+  			</div>
+  			<div class="col-12">
+  				<h1 style="text-decoration: underline">CONTÁCTANOS</h1>
+  			</div>
+  			<div class="col-12">
+  				<div class="form-floating">
+  					<input class="form-control" type="text" name="nombre" id="input-name" placeholder="Nombre"
+  						required>
+  					<label for="input-name">Nombre</label>
+  				</div>
+  			</div>
+  			<div class="col-12">
+  				<div class="form-floating">
+  					<input class="form-control" type="text" name="apellidos" id="input-apellidos"
+  						placeholder="Apellidos" required>
+  					<label for="input-apellidos">Apellidos</label>
+  				</div>
+  			</div>
+  			<div class="col-12">
+  				<div class="form-floating">
+  					<input class="form-control" type="number" name="telefono" id="input-tel" placeholder="123456789"
+  						min="100000000" max="999999999" required>
+  					<label for="input-tel">Número de teléfono</label>
+  					<div class="invalid-feedback">
+  						<p>Introduzca un número válido XXX-XX-XX-XX</p>
+  					</div>
+  					<div class="valid-feedback">
+  						<p>¡Válido!</p>
+  					</div>
+  				</div>
+  			</div>
+  			<div class="col-12">
+  				<div class="form-floating">
+  					<input type="text" class="form-control" name="dirección" id="input-calle" placeholder="Castellana"
+  						required>
+  					<label for="input-calle" class="form-label">Dirección</label>
+  				</div>
+  			</div>
+
+  			<div class="col-12">
+  				<label for="comunidad" class="form-label">Comunidad</label>
+  				<select class="form-select" name="comunidad" id="comunidad" required>
+  					<option selected disabled value="">...</option>
+  					<option>Andalucía</option>
+  					<option>Aragón</option>
+  					<option>Asturias</option>
+  					<option>Cantabria</option>
+  					<option>Comunidad de Madrid</option>
+  					<option>Castilla la Mancha</option>
+  					<option>Castilla y León</option>
+  					<option>Cataluña</option>
+  					<option>Comunidad Valenciana</option>
+  					<option>Extremadura</option>
+  					<option>Galicia</option>
+  					<option>La Rioja</option>
+  					<option>Murcia</option>
+  					<option>Navarra</option>
+  					<option>País Vasco</option>
+  				</select>
+  				<div class="invalid-feedback">
+  					<p>Seleccione una comunidad</p>
+  				</div>
+  			</div>
+  			<div class="col-12">
+  				<div class="form-floating">
+  					<input type="number" class="form-control" name="Codigo Postal" id="CP" placeholder="12345"
+  						min="10000" max="99999" required>
+  					<label for="CP">Código Postal</label>
+  					<div class="invalid-feedback">
+  						<p>Introduzca un código postal válido XXXXX</p>
+  					</div>
+  					<div class="valid-feedback">
+  						<p>¡Válido!</p>
+  					</div>
+  				</div>
+  			</div>
+  			<div class="col-12">
+  				<div class="form-floating">
+  					<input class="form-control" type="email" name="correo" id="input-mail"
+  						placeholder="name@example.com" required>
+  					<label for="input-mail">Correo electrónico</label>
+  					<div class="invalid-feedback">
+  						<p>Introduzca un correo name@example.com</p>
+  					</div>
+  					<div class="valid-feedback">
+  						<p>¡Válido!</p>
+  					</div>
+  				</div>
+  			</div>
+  			<div class="col-12">
+  				<div class="form-check">
+  					<input class="form-check-input" type="checkbox" value="" id="check" required>
+  					<label class="form-check-label" for="check">Acepto que puedan comunicarse a través del teléfono o
+  						email</label>
+  				</div>
+  			</div>
+  			<div class="">
+  				<button class="btn btn-primary" type="submit" name="button">Enviar</button>
+  			</div>
+
+  		</div>
+  	</form>
+  </div>
+
+
+
+	</div>
 		<!-- end page container -->
 
 		<!-- ================== BEGIN BASE JS ================== -->
 	<!-- ================== BEGIN core-js ================== -->
+	<script src="../custom/js/script.js"></script>
 	<script src="../assets/js/vendor.min.js"></script>
 	<script src="../assets/js/app.min.js"></script>
 	<!-- ================== END core-js ================== -->
