@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
 	<meta charset="utf-8" />
 	<title>Register</title>
@@ -8,7 +9,7 @@
 	<meta content="" name="author" />
 
 	<!-- ================== BEGIN core-css ================== -->
-  <link href="../assets_corporate/css/corporate/vendor.min.css" rel="stylesheet" />
+	<link href="../assets_corporate/css/corporate/vendor.min.css" rel="stylesheet" />
 	<link href="../assets_corporate/css/corporate/app.min.css" rel="stylesheet" />
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
 	<link href="../assets/css/vendor.min.css" rel="stylesheet" />
@@ -16,7 +17,33 @@
 	<link href="css/styles.css" rel="stylesheet" />
 	<link href="../custom/css/styles.css" rel="stylesheet">
 	<!-- ================== END core-css ================== -->
+	<!-- ================== Firebase================== -->
+	<script type="module">
+		// Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyDTAxtCQOWc8dkJTHDd92ScnPYYBhi5Lgk",
+    authDomain: "coffee-cars.firebaseapp.com",
+    databaseURL: "https://coffee-cars-default-rtdb.europe-west1.firebasedatabase.app",
+    projectId: "coffee-cars",
+    storageBucket: "coffee-cars.appspot.com",
+    messagingSenderId: "478056716355",
+    appId: "1:478056716355:web:b97ceb554930eb32dd1cf6",
+    measurementId: "G-CWJ5V86JW7"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
 </head>
+
 <body class='pace-top'>
 	<!-- BEGIN #loader -->
 	<div id="loader" class="app-loader">
@@ -33,9 +60,9 @@
 			<div class="news-feed">
 				<div class="news-image" style="background-image: url(../custom/img/fondo-register.jpg)"></div>
 				<div class="news-caption">
-          <h4 class="caption-title"><b>Coffee</b> Cars</h4>
+					<h4 class="caption-title"><b>Coffee</b> Cars</h4>
 					<p>
-            Únete a la comunidad de coches eléctricos y comienza a ahorrar y proteger el medio ambiente
+						Únete a la comunidad de coches eléctricos y comienza a ahorrar y proteger el medio ambiente
 					</p>
 				</div>
 			</div>
@@ -46,51 +73,55 @@
 				<!-- BEGIN register-header -->
 				<div class="register-header mb-25px h1">
 					<div class="mb-1 reg">Regístrate</div>
-					<small class="d-block fs-15px lh-16">Crea una cuenta en Coffee Cars y aprovecha al máximo toda la información dipsonible</small>
+					<small class="d-block fs-15px lh-16">Crea una cuenta en Coffee Cars y aprovecha al máximo toda la
+						información dipsonible</small>
 				</div>
 				<!-- END register-header -->
 
 				<!-- BEGIN register-content -->
 				<div class="register-content">
-					<form action="index.html" method="GET" class="fs-13px">
+					<form action="index.html" method="get" class="fs-13px needs-validation" novalidate>
 						<div class="mb-3">
 							<label class="mb-2">Nombre <span class="text-danger">*</span></label>
 							<div class="row gx-3">
 								<div class="col-md-6 mb-2 mb-md-0">
-									<input type="text" class="form-control fs-13px" placeholder="Escribe tu Nombre" />
+									<input type="text" class="form-control fs-13px" placeholder="Escribe tu Nombre" required />
 								</div>
 								<div class="col-md-6">
-									<input type="text" class="form-control fs-13px" placeholder="Escrbie tus Apellidos" />
+									<input type="text" class="form-control fs-13px"
+										placeholder="Escrbie tus Apellidos" required />
 								</div>
 							</div>
 						</div>
 						<div class="mb-3">
 							<label class="mb-2">Email <span class="text-danger">*</span></label>
-							<input type="text" class="form-control fs-13px" placeholder="Escribe tu email" />
+							<input id="mail" type="text" class="form-control fs-13px" placeholder="Escribe tu email" required/>
 						</div>
 						<div class="mb-3">
 							<label class="mb-2">Repite Email <span class="text-danger">*</span></label>
-							<input type="text" class="form-control fs-13px" placeholder="Repite tu email" />
+							<input id="emailrep" type="text" class="form-control fs-13px" placeholder="Repite tu email" required/>
 						</div>
 						<div class="mb-4">
 							<label class="mb-2">Contraseña <span class="text-danger">*</span></label>
-							<input type="password" class="form-control fs-13px" placeholder="Escribe tu Contraseña" />
+							<input id="contraseña" type="password" class="form-control fs-13px" placeholder="Escribe tu Contraseña" required />
 						</div>
 						<div class="form-check mb-4">
-							<input class="form-check-input" type="checkbox" value="" id="agreementCheckbox" />
+							<input class="form-check-input" type="checkbox" value="" id="agreementCheckbox" required />
 							<label class="form-check-label" for="agreementCheckbox">
-								Si clickas en Registrarme, aceptas nuestros <a href="javascript:;">Términos</a> y has leido nuestras <a href="javascript:;">Condiciones</a>.
+								Si clickas en Registrarme, aceptas nuestros <a href="javascript:;">Términos</a> y has
+								leido nuestras <a href="javascript:;">Condiciones</a>.
 							</label>
 						</div>
 						<div class="mb-4">
-							<button type="submit" class="btn btn-dark d-block w-100 btn-lg h-45px fs-13px">Registrarme</button>
+							<button onclick="registrar()"
+								class="btn btn-dark d-block w-100 btn-lg h-45px fs-13px">Registrarme</button>
 						</div>
 						<div class="mb-4 pb-5">
 							Ya estás registrado? Clicka <a href="login.html">aquí</a> para iniciar sesión.
 						</div>
-            <div class="mb-40px pb-40px text-dark">
-              <a href="index.html" class="text-primary">Acceder sin registrarse</a>
-            </div>
+						<div class="mb-40px pb-40px text-dark">
+							<a href="index.html" class="text-primary">Acceder sin registrarse</a>
+						</div>
 						<hr class="bg-gray-600 opacity-2" />
 						<p class="text-center text-gray-600">
 							&copy; Coffee Developers Derechos Reservados 2022
@@ -104,14 +135,18 @@
 		<!-- END register -->
 
 		<!-- BEGIN scroll-top-btn -->
-		<a href="javascript:;" class="btn btn-icon btn-circle btn-success btn-scroll-to-top" data-toggle="scroll-to-top"><i class="fa fa-angle-up"></i></a>
+		<a href="javascript:;" class="btn btn-icon btn-circle btn-success btn-scroll-to-top"
+			data-toggle="scroll-to-top"><i class="fa fa-angle-up"></i></a>
 		<!-- END scroll-top-btn -->
 	</div>
 	<!-- END #app -->
 
 	<!-- ================== BEGIN core-js ================== -->
+	<script src="../custom/js/app.js"></script>
+	<script src="../custom/js/script.js"></script>
 	<script src="../assets/js/vendor.min.js"></script>
 	<script src="../assets/js/app.min.js"></script>
 	<!-- ================== END core-js ================== -->
 </body>
+
 </html>
