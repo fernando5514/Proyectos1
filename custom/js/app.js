@@ -1,25 +1,15 @@
- import {
-     getAuth,
-     createUserWithEmailAndPassword
- } from "firebase/auth";
 
  function registrar() {
      var email = document.getElementById("email").value;
      var password = document.getElementById("contraseña").value;
      var emailrep = document.getElementById("emailrep").value;
      if (email == emailrep) {
+         firebase.auth().createUserWithEmailAndPassword(email, password).catch(function (error) {
+             // Handle Errors here.
+             var errorCode = error.code;
+             var errorMessage = error.message;
+             // ...
+         });
 
-         const auth = getAuth();
-         createUserWithEmailAndPassword(auth, email, password)
-             .then((userCredential) => {
-                 // Signed in
-                 const user = userCredential.user;
-                 // ...
-             })
-             .catch((error) => {
-                 const errorCode = error.code;
-                 const errorMessage = error.message;
-                 // ..
-             });
      }
- }
+    }
