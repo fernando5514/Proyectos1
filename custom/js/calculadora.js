@@ -18,8 +18,8 @@ button.onclick = function(){
     var consumo_total_electrico;
     var ahorro;
     
-    consumo_total_comb=((km/consumo)*precio) + Number(imp_circ);
-    consumo_total_electrico=km/consumoe*precioe;
+    consumo_total_comb=((km*(consumo/100))*precio) + Number(imp_circ);
+    consumo_total_electrico=km*(consumoe/100)*precioe;
     consumo_total_electrico=consumo_total_electrico+ Number(imp_circe);
     ahorro=consumo_total_comb-consumo_total_electrico;
     if(consumo_total_comb>0){
