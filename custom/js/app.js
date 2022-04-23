@@ -1,11 +1,3 @@
-app.on('ready', () => {
-    mainWindow = new BrowserWindow({
-        webPreferences: {
-            nodeIntegration: true
-        }
-    });
-});
-
 var mysql = require('mysql');
 var conexion= mysql.createConnection({
     host : '83.47.104.187',
