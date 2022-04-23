@@ -1,15 +1,15 @@
+var mysql = require('mysql');
+var conexion= mysql.createConnection({
+    host : '83.47.104.187',
+    database : 'coffee_cars',
+    user : 'admin',
+    password : 'admin',
+});
 
- function registrar() {
-     var email = document.getElementById("email").value;
-     var password = document.getElementById("contraseña").value;
-     var emailrep = document.getElementById("emailrep").value;
-     if (email == emailrep) {
-         firebase.auth().createUserWithEmailAndPassword(email, password).catch(function (error) {
-             // Handle Errors here.
-             var errorCode = error.code;
-             var errorMessage = error.message;
-             // ...
-         });
-
-     }
+conexion.connect(function(err) {
+    if (err) {
+        console.error('Error de conexion: ' + err.stack);
+        return;
     }
+    console.log('Conectado con el identificador ' + conexion.threadId);
+});
