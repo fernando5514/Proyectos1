@@ -65,7 +65,7 @@ namespace coffee_cars_c
                 }
                 if (menu == 1)
                 {
-                    string usuario;
+                    string usuario, contraseña, nombre, apellidos;
                     int aux = 0;
                     
                     do
@@ -79,7 +79,15 @@ namespace coffee_cars_c
                             Console.WriteLine("Usuario ya registrado");
                         }
                     } while (aux != 0);
-                   
+                    Console.WriteLine("Introduzca su contraseña:");
+                    contraseña = Convert.ToString(Console.ReadLine());
+                    Console.WriteLine("Introduzca su Nombre de pila:");
+                    nombre = Convert.ToString(Console.ReadLine());
+                    Console.WriteLine("Introduzca sus apellidos:");
+                    apellidos = Convert.ToString(Console.ReadLine());
+
+
+
 
                 }
 
@@ -108,6 +116,12 @@ namespace coffee_cars_c
             }
             connection.Close();
             return 0;
+        }
+        public static int registro(string query, MySqlConnection connection, MySqlCommand command, string usuario,string contraseña,string nombre, string apellidos)
+        {
+            return 0;
+            INSERT INTO `coffee_cars`.`usuarios` (`usuario`, `contrasena`, `nombre`, `apellidos`, `claveuser`) VALUES('fer', 'fer', 'fer', 'fer', '3');
+
         }
     }
 }

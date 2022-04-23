@@ -29,3 +29,33 @@ D:\Programación\Proyectos1\coffee-cars-c\obj\Debug\coffee-cars-c.csproj.CoreCom
 D:\Programación\Proyectos1\coffee-cars-c\obj\Debug\coffee-cars-c.csproj.CopyComplete
 D:\Programación\Proyectos1\coffee-cars-c\obj\Debug\coffee-cars-c.exe
 D:\Programación\Proyectos1\coffee-cars-c\obj\Debug\coffee-cars-c.pdb
+C:\Users\no-se\Documents\Programación\Proyectos 1\Proyectos1\coffee-cars-c\bin\Debug\coffee-cars-c.exe.config
+C:\Users\no-se\Documents\Programación\Proyectos 1\Proyectos1\coffee-cars-c\bin\Debug\coffee-cars-c.exe
+C:\Users\no-se\Documents\Programación\Proyectos 1\Proyectos1\coffee-cars-c\bin\Debug\coffee-cars-c.pdb
+C:\Users\no-se\Documents\Programación\Proyectos 1\Proyectos1\coffee-cars-c\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\no-se\Documents\Programación\Proyectos 1\Proyectos1\coffee-cars-c\bin\Debug\Google.Protobuf.dll
+C:\Users\no-se\Documents\Programación\Proyectos 1\Proyectos1\coffee-cars-c\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\no-se\Documents\Programación\Proyectos 1\Proyectos1\coffee-cars-c\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\no-se\Documents\Programación\Proyectos 1\Proyectos1\coffee-cars-c\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\no-se\Documents\Programación\Proyectos 1\Proyectos1\coffee-cars-c\bin\Debug\MySql.Data.dll
+C:\Users\no-se\Documents\Programación\Proyectos 1\Proyectos1\coffee-cars-c\bin\Debug\System.Buffers.dll
+C:\Users\no-se\Documents\Programación\Proyectos 1\Proyectos1\coffee-cars-c\bin\Debug\System.Memory.dll
+C:\Users\no-se\Documents\Programación\Proyectos 1\Proyectos1\coffee-cars-c\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\no-se\Documents\Programación\Proyectos 1\Proyectos1\coffee-cars-c\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\no-se\Documents\Programación\Proyectos 1\Proyectos1\coffee-cars-c\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\no-se\Documents\Programación\Proyectos 1\Proyectos1\coffee-cars-c\bin\Debug\ZstdNet.dll
+C:\Users\no-se\Documents\Programación\Proyectos 1\Proyectos1\coffee-cars-c\bin\Debug\Google.Protobuf.pdb
+C:\Users\no-se\Documents\Programación\Proyectos 1\Proyectos1\coffee-cars-c\bin\Debug\Google.Protobuf.xml
+C:\Users\no-se\Documents\Programación\Proyectos 1\Proyectos1\coffee-cars-c\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\no-se\Documents\Programación\Proyectos 1\Proyectos1\coffee-cars-c\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\no-se\Documents\Programación\Proyectos 1\Proyectos1\coffee-cars-c\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\no-se\Documents\Programación\Proyectos 1\Proyectos1\coffee-cars-c\bin\Debug\MySql.Data.xml
+C:\Users\no-se\Documents\Programación\Proyectos 1\Proyectos1\coffee-cars-c\bin\Debug\System.Buffers.xml
+C:\Users\no-se\Documents\Programación\Proyectos 1\Proyectos1\coffee-cars-c\bin\Debug\System.Memory.xml
+C:\Users\no-se\Documents\Programación\Proyectos 1\Proyectos1\coffee-cars-c\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\no-se\Documents\Programación\Proyectos 1\Proyectos1\coffee-cars-c\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\no-se\Documents\Programación\Proyectos 1\Proyectos1\coffee-cars-c\obj\Debug\coffee-cars-c.csprojAssemblyReference.cache
+C:\Users\no-se\Documents\Programación\Proyectos 1\Proyectos1\coffee-cars-c\obj\Debug\coffee-cars-c.csproj.CoreCompileInputs.cache
+C:\Users\no-se\Documents\Programación\Proyectos 1\Proyectos1\coffee-cars-c\obj\Debug\coffee-cars-c.csproj.CopyComplete
+C:\Users\no-se\Documents\Programación\Proyectos 1\Proyectos1\coffee-cars-c\obj\Debug\coffee-cars-c.exe
+C:\Users\no-se\Documents\Programación\Proyectos 1\Proyectos1\coffee-cars-c\obj\Debug\coffee-cars-c.pdb
