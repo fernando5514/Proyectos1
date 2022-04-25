@@ -67,8 +67,7 @@
 						<span class="d-none d-md-inline"><?php echo($_SESSION ['usuario']); ?></span>
 					</a>
 					<div class="dropdown-menu dropdown-menu-end me-1">
-						<a href="javascript:;" class="dropdown-item">Editar Perfil</a>
-						<a href="javascript:;" class="dropdown-item">Log Out</a>
+						<a href="login.php" class="dropdown-item">Cerrar Sesión</a>
 					</div>
 				</div>
 			</div>
@@ -94,7 +93,6 @@
 										<?php echo($_SESSION ['usuario']); ?>
 									</div>
 								</div>
-								<small>Administrador</small>
 							</div>
 						</a>
 					</div>
@@ -168,24 +166,6 @@
 						</a>
 					</div>
 
-					<div class="menu-item has-sub">
-						<a href="javascript:;" class="menu-link">
-							<div class="menu-icon">
-								<i class="fa fa-align-left"></i>
-							</div>
-							<div class="menu-text">Cuenta</div>
-							<div class="menu-caret"></div>
-						</a>
-						<div class="menu-submenu">
-							<div class="menu-item has-sub">
-								<a href="login.php" class="menu-link">
-									<div class="menu-text">Inicio de Sesión</div>
-									<div class="menu-caret"></div>
-								</a>
-							</div>
-						</div>
-					</div>
-
 					<!-- BEGIN minify-button -->
 					<div class="menu-item d-flex">
 						<a href="javascript:;" class="app-sidebar-minify-btn ms-auto" data-toggle="app-sidebar-minify"><i
@@ -206,7 +186,7 @@
 		<!-- BEGIN #content -->
 		<div class="container-fluid">
 			<div class="row ">
-				<div class="col-12 " style="height: 850px;">
+				<div class="col-12 " style="margin-left:5%;margin-right:5%; height: 800px; width:95%">
 							<iframe 
 								src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d48584.01814609505!2d-3.8916342043647054!3d40.44204408213545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scargadores%20electricos!5e0!3m2!1ses!2ses!4v1649351533052!5m2!1ses!2ses"
 								width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"

@@ -65,8 +65,7 @@
 						<span class="d-none d-md-inline"><?php echo($_SESSION ['usuario']); ?></span>
 					</a>
 					<div class="dropdown-menu dropdown-menu-end me-1">
-						<a href="javascript:;" class="dropdown-item">Editar Perfil</a>
-						<a href="javascript:;" class="dropdown-item">Log Out</a>
+						<a href="login.php" class="dropdown-item">Cerrar Sesión</a>
 					</div>
 				</div>
 			</div>
@@ -92,7 +91,6 @@
 										<?php echo($_SESSION ['usuario']); ?>
 									</div>
 								</div>
-								<small>Administrador</small>
 							</div>
 						</a>
 					</div>
@@ -166,24 +164,6 @@
 						</a>
 					</div>
 
-					<div class="menu-item has-sub">
-						<a href="javascript:;" class="menu-link">
-							<div class="menu-icon">
-								<i class="fa fa-align-left"></i>
-							</div>
-							<div class="menu-text">Cuenta</div>
-							<div class="menu-caret"></div>
-						</a>
-						<div class="menu-submenu">
-							<div class="menu-item has-sub">
-								<a href="login.php" class="menu-link">
-									<div class="menu-text">Inicio de Sesión</div>
-									<div class="menu-caret"></div>
-								</a>
-							</div>
-
-						</div>
-					</div>
 
 					<!-- BEGIN minify-button -->
 					<div class="menu-item d-flex">
