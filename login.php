@@ -1,3 +1,26 @@
+<?php
+include('db.php');
+$usuario=$_POST['usuario'];
+$contraseña=$_POST['claveuser'];
+session_start();
+$_SESSION['usuario']=$usuario;
+
+$conexion=mysqli_connect("83.47.104.187","admin","admin","coffee_cars");
+
+$consulta="SELECT*FROM usuarios where usuario='$usuario' and claveuser='$contraseña'";
+$resultado=mysqli_query($conexion,$consulta);
+
+$filas=mysqli_num_rows($resultado);
+
+if($filas){
+    header("location: index.php");
+}
+
+mysqli_free_result($resultado);
+mysqli_close($conexion);
+ 
+?>
+
 <!DOCTYPE html>
 <html lang="en" >
 <head>
@@ -46,20 +69,23 @@
 				<div class="login-header mb-30px">
 					<div class="brand">
 						<div class="d-flex p-3 align-items-center">
-              <a href="index.html" class="navbar-brand"><img class="logo-login" src="../custom/img/coffecars2.png"
+              <a href="index.php" class="navbar-brand"><img class="logo-login" src="../custom/img/coffecars2.png"
       						alt="logo"></a>
 				</div>
 				<!-- END login-header -->
 
 				<!-- BEGIN login-content -->
+                <?php if(!empty($message)): ?>
+                    <p> <?= $message ?></p>
+                <?php endif; ?>
 				<div class="login-content">
-					<form action="index.html" method="GET" class="fs-13px">
+					<form action="login.php" method="POST" class="fs-13px">
 						<div class="form-floating mb-15px">
-							<input type="text" class="form-control h-45px fs-13px" placeholder="Email Address" id="emailAddress" />
+							<input type="text" name="usuario" class="form-control h-45px fs-13px" placeholder="Email Address" id="emailAddress" />
 							<label for="emailAddress" class="d-flex align-items-center fs-13px text-gray-600">Email</label>
 						</div>
 						<div class="form-floating mb-15px">
-							<input type="password" class="form-control h-45px fs-13px" placeholder="Password" id="password" />
+							<input type="password" name="claveuser" class="form-control h-45px fs-13px" placeholder="Password" id="password" />
 							<label for="password" class="d-flex align-items-center fs-13px text-gray-600">Contraseña</label>
 						</div>
 						<div class="form-check mb-30px">

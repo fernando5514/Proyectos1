@@ -1,3 +1,17 @@
+<?php
+	session_start();		
+
+	if(empty($_SESSION ['usuario'])){
+		header('location: login.php');
+		
+	}
+	else{
+		echo($_SESSION ['usuario']);
+	}
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="esp">
 <head>
@@ -36,7 +50,7 @@
 		<div id="header" class="app-header">
 			<!-- BEGIN navbar-header -->
 			<div class="navbar-header">
-				<a href="index.html" class="navbar-brand"><img class="logo" src="../custom/img/coffeecars.jfif"
+				<a href="index.php" class="navbar-brand"><img class="logo" src="../custom/img/coffeecars.jfif"
 						alt="logo"><b>Coffee</b>Cars</a>
 				<button type="button" class="navbar-mobile-toggler" data-toggle="app-sidebar-mobile">
 					<span class="icon-bar"></span>
@@ -54,7 +68,7 @@
 						<div class="image image-icon bg-gray-800 text-gray-600">
 							<i class="fa fa-user"></i>
 						</div>
-						<span class="d-none d-md-inline">Juan Chinchilla</span>
+						<span class="d-none d-md-inline"><?php echo($_SESSION ['usuario']); ?></span>
 					</a>
 					<div class="dropdown-menu dropdown-menu-end me-1">
 						<a href="javascript:;" class="dropdown-item">Editar Perfil</a>
@@ -81,7 +95,7 @@
 							<div class="menu-profile-info">
 								<div class="d-flex align-items-center">
 									<div class="flex-grow-1">
-										Juan Chinchilla
+										<?php echo($_SESSION ['usuario']); ?>
 									</div>
 								</div>
 								<small>Administrador</small>
@@ -89,7 +103,7 @@
 						</a>
 					</div>
 					<div class="menu-item active">
-						<a href="index.html" class="menu-link">
+						<a href="index.php" class="menu-link">
 							<div class="menu-icon">
 								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
 									class="bi bi-house" viewBox="0 0 16 16">
@@ -170,12 +184,6 @@
 							<div class="menu-item has-sub">
 								<a href="login.html" class="menu-link">
 									<div class="menu-text">Inicio de Sesión</div>
-									<div class="menu-caret"></div>
-								</a>
-							</div>
-							<div class="menu-item has-sub">
-								<a href="register.html" class="menu-link">
-									<div class="menu-text">Registro</div>
 									<div class="menu-caret"></div>
 								</a>
 							</div>
