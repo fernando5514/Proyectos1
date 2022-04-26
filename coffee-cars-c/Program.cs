@@ -115,7 +115,7 @@ namespace coffee_cars_c
                             Console.WriteLine("\n\t\tCOFFEE CARS");
                             Console.WriteLine("\n\tBienvenido "+usuario+" !!!");
                             Console.WriteLine("\n\tSu clave es: "+clave);
-                            Console.WriteLine("\n\tTiene acceso a http://coffee-cars.duckdns.org/template_html_startup/login.php ");
+                            Console.WriteLine("\n\tTiene acceso a http://coffee-cars.duckdns.org");
                         }
                         else
                         {

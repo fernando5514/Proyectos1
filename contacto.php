@@ -1,4 +1,5 @@
 <?php
+
 	session_start();		
 
 	if(empty($_SESSION ['usuario'])){
@@ -8,7 +9,34 @@
 	else{
 		echo($_SESSION ['usuario']);
 	}
+		$str = strtoupper($_SESSION ['usuario']);
+
+	$conex=mysqli_connect("83.47.104.187","admin","admin","coffee_cars");
+
+		if (isset($_POST['enviar'])) {
+				
+				$nombre = trim($_POST['nombres']);
+				$apellidos = trim($_POST['apellidos']);
+				$email = trim($_POST['correo']);
+				$telefono = trim($_POST['telefono']);
+				$direccion = trim($_POST['direccion']);
+				$codigopostal = trim($_POST['direccion1']);
+				$tipo = trim($_POST['tipo']);
+				$info = trim($_POST['info']);
+				$consulta = "SELECT idUsuarios FROM coffee_cars.usuarios WHERE usuario='$_SESSION ['usuario']'";
+				$resultado=mysqli_query($conex,$consulta);
+				$resultado=(int)$resultado[1];
+				$consulta = "INSERT INTO coffee_cars.contacto(idUsuarios, nombre, apellidos, correo, telefono, direccion, codigopostal, tipo, info) VALUES ('$resultado', '$nombre', '$apellidos', '$email', '$telefono', '$direccion', '$codigopostal', '$tipo', '$info')";
+				$resultado = mysqli_query($conex,$consulta);
+				header('location: index.php');
+
+		}
+		mysqli_free_result($resultado);
+		mysqli_close($conexion);
+
+
 ?>
+
 
 
 
@@ -68,7 +96,7 @@
 						<div class="image image-icon bg-gray-800 text-gray-600">
 							<i class="fa fa-user"></i>
 						</div>
-						<span class="d-none d-md-inline"><?php echo($_SESSION ['usuario']); ?></span>
+						<span class="d-none d-md-inline"><?php echo($aux); ?></span>
 					</a>
 					<div class="dropdown-menu dropdown-menu-end me-1">
 						<a href="login.php" class="dropdown-item">Cerrar Sesión</a>
@@ -115,7 +143,7 @@
 						</a>
 					</div>
 					<div class="menu-item active">
-						<a href="mapa.html" class="menu-link">
+						<a href="mapa.php" class="menu-link">
 							<div class="menu-icon">
 								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
 									class="bi bi-pin-map" viewBox="0 0 16 16">
@@ -129,7 +157,7 @@
 						</a>
 					</div>
 					<div class="menu-item active">
-						<a href="catalogo.html" class="menu-link">
+						<a href="catalogo.php" class="menu-link">
 							<div class="menu-icon">
 								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
 									class="bi bi-images" viewBox="0 0 16 16">
@@ -143,7 +171,7 @@
 					</div>
 
 					<div class="menu-item active">
-						<a href="gestor_consumo.html" class="menu-link">
+						<a href="gestor_consumo.php" class="menu-link">
 							<div class="menu-icon">
 								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
 									class="bi bi-calculator" viewBox="0 0 16 16">
@@ -158,7 +186,7 @@
 					</div>
 
 					<div class="menu-item active">
-						<a href="contacto.html" class="menu-link">
+						<a href="contacto.php" class="menu-link">
 							<div class="menu-icon">
 								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
 									class="bi bi-envelope-fill" viewBox="0 0 16 16">
@@ -195,7 +223,7 @@
 					<div class="row justify-content-center mb-4">
 						<img src="../custom/img/coffecars2.png" class="logo2">
 					</div>
-					<form  class="needs-validation" method="post" action="mailto:coffeecarsinfo@gmail.com" novalidate>
+					<form  class="needs-validation" method="post" novalidate>
 							<div class="form-register">
 							<div class="boxform">
 								<input class="control-form form-control" type="text" name="nombres" id="nombres" placeholder="Escribe tu nombre" required >
@@ -218,12 +246,12 @@
 								<div class="invalid-feedback">Rellena todos los campos</div>
 							</div>
 							<div class="boxform">
-									<input class="control-form form-control" type="text" name="direccion" id="opcion" placeholder="Escribe un código postal si es el caso, del cargador que quieres añadir" required>
+									<input class="control-form form-control" type="text" name="direccion1" id="opcion" placeholder="Escribe un código postal si es el caso, del cargador que quieres añadir" required>
 								<div class="valid-feedback"></div>
 								<div class="invalid-feedback">Rellena todos los campos</div>
 							</div>
 							<div class="boxform control-form">
-								<select class="form-select" name="pais" id="pais" required>
+								<select class="form-select" name="tipo" id="pais" required>
 									<option selected disabled value="" >Selecciona...</option>
 									<option>Información sobre coches eléctricos</option>
 									<option>Problema con nuestra aplicacion</option>
@@ -233,11 +261,11 @@
 								<div class="invalid-feedback">Invalido completa los datos</div>
 
 							</div >
-							<textarea name="textarea" rows="10" cols="50" name="info" id="info" class="control-form form-control" placeholder="Rellena con la información necesaria"></textarea>
+							<textarea rows="10" cols="50" name="info" id="info" class="control-form form-control" placeholder="Rellena con la información necesaria"></textarea>
 								<div class="valid-feedback"></div>
 								<div class="invalid-feedback">Rellena todos los campos</div>
 							<div align="center" class="boxform control-form">
-								<input  class="botons" type="submit" value="Register">
+								<input  class="botons" type="submit" value="Enviar" name="enviar">
 							</div>
 
 							</div>

@@ -8,6 +8,7 @@
 	else{
 		echo($_SESSION ['usuario']);
 	}
+	$str = strtoupper($_SESSION ['usuario']);
 ?>
 
 
@@ -64,7 +65,7 @@
 						<div class="image image-icon bg-gray-800 text-gray-600">
 							<i class="fa fa-user"></i>
 						</div>
-						<span class="d-none d-md-inline"><?php echo($_SESSION ['usuario']); ?></span>
+						<span class="d-none d-md-inline"><?php echo($str); ?></span>
 					</a>
 					<div class="dropdown-menu dropdown-menu-end me-1">
 						<a href="login.php" class="dropdown-item">Cerrar Sesión</a>
@@ -90,7 +91,7 @@
 							<div class="menu-profile-info">
 								<div class="d-flex align-items-center">
 									<div class="flex-grow-1">
-										<?php echo($_SESSION ['usuario']); ?>
+										<?php echo($str); ?>
 									</div>
 								</div>
 							</div>

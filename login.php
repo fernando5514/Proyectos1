@@ -1,23 +1,23 @@
 <?php
-include('db.php');
-$usuario=$_POST['usuario'];
-$contraseña=$_POST['claveuser'];
-session_start();
-$_SESSION['usuario']=$usuario;
+	include('db.php');
+	$usuario=$_POST['usuario'];
+	$contraseña=$_POST['claveuser'];
+	session_start();
+	$_SESSION['usuario']=$usuario;
 
-$conexion=mysqli_connect("83.47.104.187","admin","admin","coffee_cars");
+	$conexion=mysqli_connect("83.47.104.187","admin","admin","coffee_cars");
 
-$consulta="SELECT*FROM usuarios where usuario='$usuario' and claveuser='$contraseña'";
-$resultado=mysqli_query($conexion,$consulta);
+	$consulta="SELECT*FROM usuarios where usuario='$usuario' and claveuser='$contraseña'";
+	$resultado=mysqli_query($conexion,$consulta);
 
-$filas=mysqli_num_rows($resultado);
+	$filas=mysqli_num_rows($resultado);
 
-if($filas){
-    header("location: index.php");
-}
+	if($filas){
+		header("location: index.php");
+	}
 
-mysqli_free_result($resultado);
-mysqli_close($conexion);
+	mysqli_free_result($resultado);
+	mysqli_close($conexion);
  
 ?>
 
