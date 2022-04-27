@@ -5,7 +5,7 @@
 	session_start();
 	$_SESSION['usuario']=$usuario;
 
-	$conexion=mysqli_connect("83.47.104.187","admin","admin","coffee_cars");
+	$conexion=mysqli_connect("79.146.203.183","admin","admin","coffee_cars");
 
 	$consulta="SELECT*FROM usuarios where usuario='$usuario' and claveuser='$contraseña'";
 	$resultado=mysqli_query($conexion,$consulta);
@@ -88,20 +88,10 @@
 							<input type="password" name="claveuser" class="form-control h-45px fs-13px" placeholder="Password" id="password" />
 							<label for="password" class="d-flex align-items-center fs-13px text-gray-600">Contraseña</label>
 						</div>
-						<div class="form-check mb-30px">
-							<input class="form-check-input" type="checkbox" value="1" id="rememberMe" />
-							<label class="form-check-label" for="rememberMe">
-								Recuérdame
-							</label>
-						</div>
 						<div class="mb-15px">
 							<button type="submit" class="btn btn-dark d-block h-45px w-100 btn-lg fs-14px">Entrar</button>
 						</div>
-						<div class="mb-10px text-dark">
-							No estás registrado? Haz click <a href="register.html" class="text-primary">aquí</a> para registrarte.
-						</div>
 						<div class="mb-40px pb-40px text-dark">
-              <a href="index.html" class="text-primary">Acceder sin iniciar sesión</a>
             </div>
 						<hr class="bg-gray-600 opacity-2" />
 						<div class="text-gray-600 text-center  mb-0">

@@ -218,8 +218,8 @@
 										<div class="h1 text-white text-opacity-30 me-3"><i class="bi bi-download"></i>
 										</div>
 										<div>
-											<div class="fw-bold mb-1 h3">21k+</div>
-											<div class="fw-bold text-white text-opacity-80">Usuarios</div>
+											<div class="fw-bold mb-1 h3">Usuario</div>
+											<div class="fw-bold text-white text-opacity-80"><?php echo($str); ?></div>
 										</div>
 									</div>
 								</div>
@@ -332,8 +332,8 @@
 						<div class="section-subtitle">Sobre nosotros</div>
 						<div class="section-title">¿Cómo empezamos?</div>
 						<div class="section-desc">
-							Our suite of developer-friendly products and services help you build, secure, and deliver
-							enterprise-grade apps in less time — for any platform.
+							Comenzamos con una idea de como podríamos ayudar a los usuarios a reducir el consumo de combustible de manera sencilla y eficiente. 
+							Para ello pensamos en crear una aplicación con información útil para los conductores que quieran pasarse a la movilidad eléctrica, y surgió Coffee Cars.
 						</div>
 					</div>
 					<!-- END col-6 -->
@@ -349,37 +349,37 @@
 						<div class="row">
 							<div class="col-lg-3">
 								<div class="team-member">
-									<img class="mx-auto rounded-circle" src="" alt="..." />
+									<img class="mx-auto rounded-circle" src="/custom/img/fernando_ramirez.jpg" alt="..." />
 									<h4>Fernando Ramírez</h4>
-									<p class="text-muted">Jefe Proyecto</p>
-									<a class="btn btn-dark btn-social mx-2" href="#!"
+									<p class="text-muted">Jefe de Proyecto</p>
+									<a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/fernando-ramírez-fernández-3a13191bb/"
 										aria-label="Parveen Anand LinkedIn Profile"><i
 											class="fab fa-linkedin-in"></i></a>
 								</div>
 							</div>
 							<div class="col-lg-3">
 								<div class="team-member">
-									<img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />
+									<img class="mx-auto rounded-circle" src="/custom/img/alvaro_ramos.jpeg" alt="..." />
 									<h4>Álvaro Ramos</h4>
-									<p class="text-muted">Documentador Jefe</p>
-									<a class="btn btn-dark btn-social mx-2" href="#!"
+									<p class="text-muted">Documentador</p>
+									<a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/%C3%A1lvaro-ramos-undefined-301930236/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BquDHoPfOTiWuoXVYr03ybQ%3D%3D"
 										aria-label="Diana Petersen LinkedIn Profile"><i
 											class="fab fa-linkedin-in"></i></a>
 								</div>
 							</div>
 							<div class="col-lg-3">
 								<div class="team-member">
-									<img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />
+									<img class="mx-auto rounded-circle" src="/custom/img/alvaro_delgado.jpg" alt="..." />
 									<h4>Álvaro Delgado</h4>
 									<p class="text-muted">Diseñador Jefe</p>
-									<a class="btn btn-dark btn-social mx-2" href="#!"
+									<a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/%C3%A1lvaro-delgado-gallego-3bab85194/"
 										aria-label="Larry Parker LinkedIn Profile"><i
 											class="fab fa-linkedin-in"></i></a>
 								</div>
 							</div>
 							<div class="col-lg-3">
 								<div class="team-member">
-									<img class="mx-auto rounded-circle" src="../custom/img/chinchilla_equipo.jpeg" alt="..." />
+									<img class="mx-auto rounded-circle" src="/custom/img/juan_chinchilla.jpeg" alt="..." />
 									<h4>Juan Chinchilla</h4>
 									<p class="text-muted">Diseñador Web</p>
 									<a class="btn btn-dark btn-social mx-2" href="#!"

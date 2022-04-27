@@ -59,3 +59,7 @@ C:\Users\no-se\Documents\Programación\Proyectos 1\Proyectos1\coffee-cars-c\obj\
 C:\Users\no-se\Documents\Programación\Proyectos 1\Proyectos1\coffee-cars-c\obj\Debug\coffee-cars-c.csproj.CopyComplete
 C:\Users\no-se\Documents\Programación\Proyectos 1\Proyectos1\coffee-cars-c\obj\Debug\coffee-cars-c.exe
 C:\Users\no-se\Documents\Programación\Proyectos 1\Proyectos1\coffee-cars-c\obj\Debug\coffee-cars-c.pdb
+D:\Programación\Proyectos1\coffee-cars-c\bin\Debug\coffee-cars-c.exe.manifest
+D:\Programación\Proyectos1\coffee-cars-c\bin\Debug\coffee-cars-c.application
+D:\Programación\Proyectos1\coffee-cars-c\obj\Debug\coffee-cars-c.exe.manifest
+D:\Programación\Proyectos1\coffee-cars-c\obj\Debug\coffee-cars-c.application

@@ -11,7 +11,7 @@
 	}
 		$str = strtoupper($_SESSION ['usuario']);
 
-	$conex=mysqli_connect("83.47.104.187","admin","admin","coffee_cars");
+	$conex=mysqli_connect("79.146.203.183","admin","admin","coffee_cars");
 
 		if (isset($_POST['enviar'])) {
 				
@@ -25,7 +25,6 @@
 				$info = trim($_POST['info']);
 				$consulta = "SELECT idUsuarios FROM coffee_cars.usuarios WHERE usuario='$_SESSION ['usuario']'";
 				$resultado=mysqli_query($conex,$consulta);
-				$resultado=(int)$resultado[1];
 				$consulta = "INSERT INTO coffee_cars.contacto(idUsuarios, nombre, apellidos, correo, telefono, direccion, codigopostal, tipo, info) VALUES ('$resultado', '$nombre', '$apellidos', '$email', '$telefono', '$direccion', '$codigopostal', '$tipo', '$info')";
 				$resultado = mysqli_query($conex,$consulta);
 				header('location: index.php');
@@ -96,7 +95,7 @@
 						<div class="image image-icon bg-gray-800 text-gray-600">
 							<i class="fa fa-user"></i>
 						</div>
-						<span class="d-none d-md-inline"><?php echo($aux); ?></span>
+						<span class="d-none d-md-inline"><?php echo($str); ?></span>
 					</a>
 					<div class="dropdown-menu dropdown-menu-end me-1">
 						<a href="login.php" class="dropdown-item">Cerrar Sesión</a>
@@ -122,7 +121,7 @@
 							<div class="menu-profile-info">
 								<div class="d-flex align-items-center">
 									<div class="flex-grow-1">
-										<?php echo($_SESSION ['usuario']); ?>
+										<?php echo($str); ?>
 									</div>
 								</div>
 							</div>
