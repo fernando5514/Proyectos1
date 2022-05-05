@@ -5,7 +5,7 @@
 	session_start();
 	$_SESSION['usuario']=$usuario;
 
-	$conexion=mysqli_connect("79.146.203.183","admin","admin","coffee_cars");
+	$conexion=mysqli_connect("79.146.192.82","admin","admin","coffee_cars");
 
 	$consulta="SELECT*FROM usuarios where usuario='$usuario' and claveuser='$contraseña'";
 	$resultado=mysqli_query($conexion,$consulta);

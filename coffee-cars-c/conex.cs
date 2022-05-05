@@ -9,7 +9,7 @@ namespace coffee_cars_c
 {
     class conex
     {
-        protected String connectionString = "datasource=79.146.203.183;port=3306;username=admin;password=admin;database=coffee_cars";
+        protected String connectionString = "datasource=79.146.192.82;port=3306;username=admin;password=admin;database=coffee_cars";
 
         public String GetConnection()
         {

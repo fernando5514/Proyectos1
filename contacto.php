@@ -11,7 +11,7 @@
 	}
 		$str = strtoupper($_SESSION ['usuario']);
 
-	$conex=mysqli_connect("79.146.203.183","admin","admin","coffee_cars");
+	$conex=mysqli_connect("79.146.192.82","admin","admin","coffee_cars");
 
 		if (isset($_POST['enviar'])) {
 				

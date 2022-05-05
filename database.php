@@ -1,6 +1,6 @@
 <?php
 
-$server = '79.146.203.183';
+$server = '79.146.192.82';
 $username = 'admin';
 $password = 'admin';
 $database = 'coffee_cars';
